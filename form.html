@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Journal</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="form-title">New Journal📝</h1>
+        <p id="journal-date" class="journal-date"></p>
+
+        <form id="entryForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <textarea id="content" placeholder="Start writting..." required></textarea>
+
+            <div class="photo-row">
+                <button type="button" class="photo-btn" id="chooseImageBtn">Choose Image📷</button>
+            </div>
+
+            <input type="file" id="image" accept="image/*" hidden>
+            <img id="previewImg" style="display:none;" class="preview-img">
+
+            <button type="submit" class="save-btn">Save📥</button>
+            <button type="button" class="cancel-btn" id="cancelBtn">Cancel❌</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
